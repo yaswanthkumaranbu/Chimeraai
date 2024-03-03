@@ -91,7 +91,9 @@ const ChatbotComponent = () => {
       <iframe
         title="Streamlit Chatbot"
         // src="http://54.166.212.221:8501/"
-        src="http://localhost:8502/"
+        // src="http://localhost:8502/"
+        src="https://chimera-engine-vital-poc.onrender.com/"
+
         width="100%"
         height="900px"
         //allow="fullscreen"
