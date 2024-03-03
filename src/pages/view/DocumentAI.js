@@ -15,7 +15,8 @@ const DocumentAI = () => {
       <iframe
         title="Streamlit Chatbot"
         // src="http://54.87.189.202:8501/"
-        src="http://localhost:8501/"
+        // src="http://localhost:8501/"
+      src="https://chimera-engine.onrender.com/"
         width="100%"
         height="900px"
         allow="fullscreen"
