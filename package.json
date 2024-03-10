@@ -21,6 +21,7 @@
     "babel-plugin-macros": "^3.1.0",
     "final-form": "^4.20.10",
     "gapi-script": "^1.2.0",
+    "http-proxy-middleware": "^2.0.6",
     "jwt-decode": "^4.0.0",
     "material-react-table": "^1.8.0",
     "randomcolor": "^0.6.2",
@@ -32,6 +33,7 @@
     "react-google-login": "^5.2.2",
     "react-icons": "^4.11.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
     "shortid": "^2.2.16",
     "styled-components": "^4.4.1"
   },

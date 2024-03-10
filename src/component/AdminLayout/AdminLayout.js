@@ -336,7 +336,7 @@ const COMP = () => {
           </div>
         </nav>
 
-        <main class="content" id={theme}>
+        <main class="content" id={theme} >
           <nav
             className={
               colorq +

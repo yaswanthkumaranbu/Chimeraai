@@ -74,9 +74,22 @@
 //    </div>
 //   );
 // }
-import React from "react";
+import React, { useState } from "react";
+import { css } from "@emotion/react";
+import { BarLoader } from "react-spinners";
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 const ChatbotComponent = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleIframeLoad = () => {
+    setIsLoading(false);
+  };
   return (
     <div
       style={{
@@ -86,18 +99,29 @@ const ChatbotComponent = () => {
         width: "83%",
         height: "100%",
         marginLeft: "33vh",
+        overflowY: "auto",
       }}
+      className="cont"
     >
+      <style>{`.cont::-webkit-scrollbar{
+        display:none;
+      }`}</style>
+      <BarLoader
+        css={override}
+        loading={isLoading}
+        color={"Green"} // You can change the color to your preference
+        style={{ width: "100%" }}
+      />
       <iframe
         title="Streamlit Chatbot"
         // src="http://54.166.212.221:8501/"
         // src="http://localhost:8502/"
         src="https://chimera-engine-vital-poc.onrender.com/"
-
         width="100%"
         height="900px"
         //allow="fullscreen"
         style={{ border: "none" }} // Optional: Remove iframe border
+        onLoad={handleIframeLoad}
       />
     </div>
   );
